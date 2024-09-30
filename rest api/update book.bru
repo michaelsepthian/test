@@ -1,0 +1,26 @@
+meta {
+  name: update book
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8320/book/update-book/dc029872-d7d7-4953-bf0e-cf0ec56ac366
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Im1pY2hlbEBnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im1pY2hlbCIsInN1YiI6IjU1YzU1Mjg1LTY4NTMtNGM0Yi1iNWVhLWE5YjgyM2M0NTllNSIsImlhdCI6MTcyNzUxOTk1NiwiZXhwIjoxNzI3NTIzNTU2fQ.yeA_suWHElWnY5Zskcs61LiP1ZpnYicg-UjHkBN8mfU
+}
+
+body:json {
+  {
+    "title": "book 4",
+    "author": "author 4",
+    "isbn": "1321-521241-3121",
+    "publishedDate": "2016-03-02",
+    "stock": 3
+  }
+}

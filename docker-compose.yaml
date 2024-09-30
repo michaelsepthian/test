@@ -1,0 +1,17 @@
+version: '3'
+services:
+ db:
+   image: "postgres"
+   restart: always
+   environment:
+     - POSTGRES_USER=midas1234
+     - POSTGRES_PASSWORD=password1234
+     - POSTGRES_DB=midas
+   ports:
+     - "5420:5432"
+   networks:
+     - backend
+
+networks:
+  backend:
+    driver: "bridge"

@@ -1,0 +1,26 @@
+meta {
+  name: book add
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8320/book/add
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImJva2lyQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiYm9raXIiLCJzdWIiOiJiMGI1ZGZmOS1mZTU2LTRkNTgtODU5ZC03OWJjNTcxMzY3NzIiLCJpYXQiOjE3Mjc2MjEwNDksImV4cCI6MTcyNzYyNDY0OX0.q-J4SBFRMnBbtpKSGzI31tJG0B0PdGHxsQeznK_w1J4
+}
+
+body:json {
+  {
+    "title": "book 6",
+    "author": "author 6",
+    "isbn": "34531-234453-6789",
+    "publishedDate": "2019-12-02",
+    "stock": 8
+  }
+}

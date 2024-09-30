@@ -1,0 +1,23 @@
+meta {
+  name: borrow book
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8320/transaction/borrow-book
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Im1pY2hlbEBnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im1pY2hlbCIsInN1YiI6IjU1NWE3ZTI5LTE0YmEtNGI3ZC1iNzUzLTJhYTQ2Yzk5OWQyMiIsImlhdCI6MTcyNzYyMTU5OCwiZXhwIjoxNzI3NjI1MTk4fQ.EQ0Nn04Re6akeCxWINNLPr-2Qw04GEainSIVg5-r_-g
+}
+
+body:json {
+  {
+    "userId": "5d09b815-d79e-4efd-bc9e-618d8fb9e972",
+    "bookId": "ff3c7466-a4eb-42dc-bec5-221859bd904d"
+  }
+}

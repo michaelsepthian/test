@@ -1,0 +1,21 @@
+meta {
+  name: get book page
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8320/book/get-books?sortBy=title&sort=asc&page=0
+  body: none
+  auth: none
+}
+
+params:query {
+  sortBy: title
+  sort: asc
+  page: 0
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImJva2lyQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiYm9raXIiLCJzdWIiOiJiMGI1ZGZmOS1mZTU2LTRkNTgtODU5ZC03OWJjNTcxMzY3NzIiLCJpYXQiOjE3Mjc2MjEwNDksImV4cCI6MTcyNzYyNDY0OX0.q-J4SBFRMnBbtpKSGzI31tJG0B0PdGHxsQeznK_w1J4
+}
